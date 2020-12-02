@@ -15,7 +15,7 @@ namespace TournamentApp
             int style;
 
 
-            ConcreteBuilder _chuj = new ConcreteBuilder();
+            ConcreteBuilder _builder = new ConcreteBuilder();
             Console.WriteLine("Witaj w systemie rejestracji zawodników! Aby wrócić do menu głównego wpisz 'exit' \n");
             Console.WriteLine("Podaj imię: \n");
             name = Console.ReadLine();
@@ -25,28 +25,28 @@ namespace TournamentApp
             }
             else
             {
-                _chuj.BuildName(name);
+                _builder.BuildName(name);
             }
 
             Console.WriteLine("Podaj nazwisko: \n");
             surname = Console.ReadLine();
-            _chuj.BuildSurname(surname);
+            _builder.BuildSurname(surname);
 
             Console.WriteLine("Podaj swoją wagę: \n");
             weight = int.Parse(Console.ReadLine());
-            _chuj.BuildWeight(weight);
+            _builder.BuildWeight(weight);
 
             Console.WriteLine("Podaj liczbę stoczonych walk: \n");
             fightsCount = int.Parse(Console.ReadLine());
-            _chuj.BuildFightsCount(fightsCount);
+            _builder.BuildFightsCount(fightsCount);
 
             Console.WriteLine("Wybierz styl walki (1 - mma, 2- k1, 3- boks");
             style = int.Parse(Console.ReadLine());
-            _chuj.BuildStyle(style);
+            _builder.BuildStyle(style);
 
             Console.WriteLine("Pomyślnie zarejestrowałeś się do turnieju! Zostaniesz przeniesiony do menu głównego!");
 
-            fighters.Add(_chuj.GetFighter());
+            fighters.Add(_builder.GetFighter());
         }
 
         public  void FightersList(List<Fighter> fighters)
@@ -55,7 +55,7 @@ namespace TournamentApp
             Console.WriteLine("Lista zawodników: \n");
             foreach (var fighter in fighters)
             {
-                Console.WriteLine(fighter.name + " | " + fighter.surname + " | " + "Waga: " + fighter.weight + " kg. | Styl walki: " + fighter.style + " | " + "Liczba stoczonych walk: " + fighter.fightsCount + "\n");
+                Console.WriteLine(fighter.name + " | " + fighter.surname + " | " + "Waga: " + fighter.weight + " kg. | Styl walki: " + ConvertStyle(fighter.style) + " | " + "Liczba stoczonych walk: " + fighter.fightsCount + "\n");
             }
             Console.WriteLine(fighters.Count);
             Console.WriteLine("Aby wrócić do menu głównego wpisz 'exit' \n");
@@ -67,6 +67,21 @@ namespace TournamentApp
             else
             {
                 Console.WriteLine("Błąd");
+            }
+        }
+        public string ConvertStyle(int style)
+        {
+            if (style == 1)
+            {
+                return "MMA";
+            }
+            else if (style == 2)
+            {
+                return "K1";
+            }
+            else
+            {
+                return "Boks";
             }
         }
     }

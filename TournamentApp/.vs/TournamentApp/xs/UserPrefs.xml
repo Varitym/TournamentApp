@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{69D3D77B-3484-4312-9560-33201E6B246D}|Default">
   <MonoDevelop.Ide.ItemProperties.TournamentApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IBuilder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Facade.cs">
     <Files>
-      <File FileName="Program.cs" Line="54" Column="52" />
-      <File FileName="Fighter.cs" />
-      <File FileName="ConcreteBuilder.cs" />
+      <File FileName="Program.cs" Line="7" Column="6" />
+      <File FileName="Fighter.cs" Line="1" Column="1" />
+      <File FileName="ConcreteBuilder.cs" Line="1" Column="1" />
       <File FileName="IBuilder.cs" Line="1" Column="1" />
+      <File FileName="Operations.cs" Line="28" Column="25" />
+      <File FileName="Facade.cs" Line="14" Column="85" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TournamentApp" expanded="True">
             <Node name="TournamentApp" expanded="True">
-              <Node name="IBuilder.cs" selected="True" />
+              <Node name="Facade.cs" selected="True" />
             </Node>
           </Node>
         </State>
