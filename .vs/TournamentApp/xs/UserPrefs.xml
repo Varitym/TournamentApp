@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{2BB880A5-4FE5-4EA0-8B78-FC41365530D4}|Default">
+  <MonoDevelop.Ide.ItemProperties.TournamentApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../usr/local/share/dotnet/sdk/5.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets">
+    <Files>
+      <File FileName="TournamentApp/Program.cs" Line="109" Column="1" />
+      <File FileName="TournamentApp/IBuilder.cs" Line="13" Column="1" />
+      <File FileName="TournamentApp/Fighter.cs" Line="5" Column="6" />
+      <File FileName="TournamentApp/Facade.cs" Line="26" Column="36" />
+      <File FileName="TournamentApp/Operations.cs" Line="21" Column="39" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/5.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="241" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TournamentApp" expanded="True">
+            <Node name="TournamentApp" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
