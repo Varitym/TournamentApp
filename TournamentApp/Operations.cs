@@ -6,6 +6,7 @@ namespace TournamentApp
 {
     class Operations
     {
+        
         public  void Register(List<Fighter> fighters)
         {
             string name;
@@ -16,17 +17,11 @@ namespace TournamentApp
 
 
             ConcreteBuilder _builder = new ConcreteBuilder();
-            Console.WriteLine("Witaj w systemie rejestracji zawodników! Aby wrócić do menu głównego wpisz 'exit' \n");
+            Console.WriteLine("Witaj w systemie rejestracji zawodników!\n");
             Console.WriteLine("Podaj imię: \n");
             name = Console.ReadLine();
-            if (name == "exit")
-            {
-               // MainMenu(fighters);
-            }
-            else
-            {
-                _builder.BuildName(name);
-            }
+            _builder.BuildName(name);
+           
 
             Console.WriteLine("Podaj nazwisko: \n");
             surname = Console.ReadLine();
@@ -44,30 +39,21 @@ namespace TournamentApp
             style = int.Parse(Console.ReadLine());
             _builder.BuildStyle(style);
 
-            Console.WriteLine("Pomyślnie zarejestrowałeś się do turnieju! Zostaniesz przeniesiony do menu głównego!");
+            Console.WriteLine("Pomyślnie zarejestrowałeś się do turnieju! Zostaniesz przeniesiony do menu głównego!\n");
 
             fighters.Add(_builder.GetFighter());
         }
 
         public  void FightersList(List<Fighter> fighters)
         {
-            string back;
+            
             Console.WriteLine("Lista zawodników: \n");
             foreach (var fighter in fighters)
             {
                 Console.WriteLine(fighter.name + " | " + fighter.surname + " | " + "Waga: " + fighter.weight + " kg. | Styl walki: " + ConvertStyle(fighter.style) + " | " + "Liczba stoczonych walk: " + fighter.fightsCount + "\n");
             }
-            Console.WriteLine(fighters.Count);
-            Console.WriteLine("Aby wrócić do menu głównego wpisz 'exit' \n");
-            back = Console.ReadLine();
-            if (back == "exit")
-            {
-                //MainMenu(fighters);
-            }
-            else
-            {
-                Console.WriteLine("Błąd");
-            }
+
+            
         }
         public string ConvertStyle(int style)
         {

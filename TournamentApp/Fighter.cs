@@ -9,9 +9,5 @@ namespace TournamentApp
         public int fightsCount { get; set; }
         public int style { get; set; }
 
-        public Fighter()
-        {
-
-        }
     }
 }

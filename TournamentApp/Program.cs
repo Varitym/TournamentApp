@@ -9,12 +9,7 @@ namespace TournamentApp
         {
             
             Facade fasada = new Facade();
-            fasada.Menu();
-           
-
-            
-
-         
+            fasada.Menu();       
         }
     }
 }

@@ -11,7 +11,7 @@ namespace TournamentApp
 
         public void Menu()
         {
-            Console.WriteLine("Strona główna aplikacji turniejowej gali FightMMA, wybierz opcje: \n");
+            Console.WriteLine("Strona główna aplikacji turniejowej gali FightClub, wybierz opcje: \n");
             Console.WriteLine("1 - Rejestracja zawodnika | 2 - Lista Zawodników | 3 - Informacje | 4 - Wyjście");
             int option;
             {
@@ -26,6 +26,10 @@ namespace TournamentApp
                         break;
                     case 2:
                         operations.FightersList(fighters);
+                        Menu();
+                        break;
+                    case 3:
+                        Console.WriteLine("Wykorzystane wzorce: Budowniczy, Fasada");
                         Menu();
                         break;
                     case 4:
